@@ -46,18 +46,18 @@ public class Interactible : MonoBehaviour
 
     void GazeEntered()
     {
-        for (int i = 0; i < defaultMaterials.Length; i++)
+        /*for (int i = 0; i < defaultMaterials.Length; i++)
         {
             defaultMaterials[i].SetFloat("_Highlight", .25f);
-        }
+        }*/
     }
 
     void GazeExited()
     {
-        for (int i = 0; i < defaultMaterials.Length; i++)
+        /*for (int i = 0; i < defaultMaterials.Length; i++)
         {
             defaultMaterials[i].SetFloat("_Highlight", 0f);
-        }
+        }*/
     }
 
     void OnSelect()
@@ -74,5 +74,6 @@ public class Interactible : MonoBehaviour
         }
 
         this.SendMessage("PerformTagAlong");
+        this.SendMessage("PerfomText");
     }
 }

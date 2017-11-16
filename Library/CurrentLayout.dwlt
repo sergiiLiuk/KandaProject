@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 84
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 85
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 86
+  controlID: 11
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 355
     height: 897
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -392,23 +392,23 @@ MonoBehaviour:
     height: 876
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9afbffff00000000
+    m_SelectedIDs: 663b0000
+    m_LastClickedID: 15206
+    m_ExpandedIDs: 049afeffda9afeff109cfeff08cbfeffe8cbfeff1ecdfeff82dbfeff62dcfeff96ddfeff3ca7ffff0ea8ffff4ea9ffff38cdffff12ceffff52cfffff72dfffff4ae0ffff8ae1ffffa0fbffff0000000076390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Canvas
+      m_OriginalName: Canvas
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -26156
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -444,14 +444,14 @@ MonoBehaviour:
     width: 1737
     height: 876
   m_SceneLighting: 1
-  lastFramingTime: 847.7043411556604
+  lastFramingTime: 1705.5582957721213
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.21043457, y: -0.21768022, z: 5.0384207}
+    m_Target: {x: 0.57979655, y: -0.1921174, z: 4.396377}
     speed: 2
-    m_Value: {x: -0.21043457, y: -0.21768022, z: 5.0384207}
+    m_Value: {x: 0.57979655, y: -0.1921174, z: 4.396377}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -474,13 +474,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.0752381, y: 0.00508252, z: -0.00038330912, w: -0.99715257}
+    m_Target: {x: -0.09307714, y: -0.045687586, z: 0.0042752107, w: -0.994601}
     speed: 2
-    m_Value: {x: -0.075238094, y: 0.00508252, z: -0.0003833091, w: -0.99715257}
+    m_Value: {x: -0.09307714, y: -0.045687586, z: 0.0042752107, w: -0.994601}
   m_Size:
-    m_Target: 5.2130775
+    m_Target: 4.9323077
     speed: 2
-    m_Value: 5.2130775
+    m_Value: 4.9323077
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -558,19 +558,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Holograms/Support/Fitbox
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Holograms/Support/Fitbox
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 76270000
-    m_LastClickedID: 10102
-    m_ExpandedIDs: 00000000762700008a270000d02700003a2800006e2800003429000044290000462900005029000064290000242a000000ca9a3bffffff7f
+    m_SelectedIDs: 34280000
+    m_LastClickedID: 10292
+    m_ExpandedIDs: 000000004a2700005627000084270000d4270000002800000c280000182800001a28000022280000342800005e28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -598,7 +598,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000762700008a270000d02700003a2800006e2800003429000044290000462900005029000064290000242a0000
+    m_ExpandedIDs: 000000004a2700005627000084270000d4270000002800000c280000182800001a28000022280000342800005e280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 802c000058240000882b0000c62b000024250000fa2d0000822a00008a2400003e2800007076ffffb62c0000ee2b00008a2f0000da2500007424000090240000b82900004c280000102e0000ac240000de3500000e250000922400009424000080260000a22400009824000000000000a43c000088260000f80800008e0700004c2600009a2400009c2400009e240000a0240000a4240000ae240000a6240000f4240000fc2400000a250000fe240000ea240000f4290000d2250000c224000068250000d0290000ca2400001e070000f224000030f2ffffb40fffffee240000f8240000582a0000382a0000ec24000060e3030014260000b22a0000d6270000aaa7ffffd42700007e55fdffde2700000e2800003cc3ffffc6270000a409f8ff60eaffffc2dcfeff4c29000076270000be2400003c250000a6250000ae25000020270000da270000c8280000ac250000b6250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

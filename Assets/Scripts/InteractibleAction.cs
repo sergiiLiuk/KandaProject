@@ -6,7 +6,8 @@ using UnityEngine;
 /// </summary>
 public class InteractibleAction : MonoBehaviour
 {
-    [Tooltip("Drag the Tagalong prefab asset you want to display.")]
+    public GameObject PerformText;
+    /*[Tooltip("Drag the Tagalong prefab asset you want to display.")]
     public GameObject ObjectToTagAlong;
 
     void PerformTagAlong()
@@ -30,5 +31,18 @@ public class InteractibleAction : MonoBehaviour
         instantiatedObjectToTagAlong.AddComponent<Billboard>();
 
         instantiatedObjectToTagAlong.AddComponent<SimpleTagalong>();
-   }
+   }*/
+
+    void PerfomText()
+    {
+        if (!PerformText.activeSelf)
+        {
+            PerformText.SetActive(true);
+        }
+        else
+        {
+            PerformText.SetActive(false);
+        }
+
+    }
 }

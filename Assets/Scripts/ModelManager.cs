@@ -22,7 +22,7 @@ public class ModelManager : Singleton<ModelManager>
         keywordCollection = new Dictionary<string, KeywordAction>();
 
         // Add keyword to start manipulation.
-        keywordCollection.Add("Move Astronaut", MoveAstronautCommand);
+        keywordCollection.Add("Move", MoveAstronautCommand);
 
         /* TODO: DEVELOPER CODING EXERCISE 5.a */
 
