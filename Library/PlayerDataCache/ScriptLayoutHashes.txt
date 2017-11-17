@@ -151,5 +151,5 @@ a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.Interactible
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 5bfd4e15a7c3ffd1cb09d9f51970bc66 Assembly-CSharp.dll:Academy.HoloToolkit.Unity.HandsManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Academy.HoloToolkit.Unity.GestureManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ModelManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AppManager
 8341b3cb2ade13f5c82c8071edc414fb Assembly-CSharp.dll:Academy.HoloToolkit.Unity.CursorManager

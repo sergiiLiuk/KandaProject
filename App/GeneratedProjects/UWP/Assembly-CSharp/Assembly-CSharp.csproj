@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{d9468b7c-b972-4738-b0e9-58beee382e4b}</ProjectGuid>
+    <ProjectGuid>{4c40723e-a5f6-4021-ac72-f8b33b381a9e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -374,6 +374,9 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit-Gesture-211\Utilities\Scripts\Singleton.cs">
       <Link>HoloToolkit-Gesture-211\Utilities\Scripts\Singleton.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\AppManager.cs">
+      <Link>Scripts\AppManager.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\DismissOnSelect.cs">
       <Link>Scripts\DismissOnSelect.cs</Link>
     </Compile>
@@ -388,9 +391,6 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleManager.cs">
       <Link>Scripts\InteractibleManager.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\ModelManager.cs">
-      <Link>Scripts\ModelManager.cs</Link>
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

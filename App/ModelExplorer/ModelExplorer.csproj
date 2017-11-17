@@ -329,7 +329,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{d9468b7c-b972-4738-b0e9-58beee382e4b}</Project>
+      <Project>{190e09bf-b165-4f11-ac39-e9bfcc7159a6}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>

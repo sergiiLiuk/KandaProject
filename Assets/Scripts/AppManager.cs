@@ -4,8 +4,11 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 
-public class ModelManager : Singleton<ModelManager>
+public class AppManager : Singleton<AppManager>
 {
+    [HideInInspector]
+    private static APP_STATES appState;
+
     float expandAnimationCompletionTime;
     // Store a bool for whether our astronaut model is expanded or not.
     bool isModelExpanding = false;
@@ -16,6 +19,14 @@ public class ModelManager : Singleton<ModelManager>
     // Defines which function to call when a keyword is recognized.
     delegate void KeywordAction(PhraseRecognizedEventArgs args);
     Dictionary<string, KeywordAction> keywordCollection;
+
+    public enum APP_STATES
+    {
+        MENU,
+        SELECTION_MODE,
+        SHOW_MODE
+    }
+
 
     void Start()
     {
@@ -36,6 +47,10 @@ public class ModelManager : Singleton<ModelManager>
         keywordRecognizer = new KeywordRecognizer(keywordCollection.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
         keywordRecognizer.Start();
+
+        appState = APP_STATES.MENU;
+
+
     }
 
     void OnDestroy()
@@ -107,6 +122,7 @@ public class ModelManager : Singleton<ModelManager>
 
     public void Update()
     {
+        AppState(appState);
         /* if (isModelExpanding && Time.realtimeSinceStartup >= expandAnimationCompletionTime)
          {
              isModelExpanding = false;
@@ -118,5 +134,28 @@ public class ModelManager : Singleton<ModelManager>
                  animator.enabled = false;
              }
          }*/
+    }
+
+
+    public void AppState(APP_STATES appState)
+    {
+        switch (appState)
+        {
+            case APP_STATES.MENU:
+                //Debug.Log("Dev-> MENU");
+
+                break;
+            case APP_STATES.SELECTION_MODE:
+                Debug.Log("Dev-> SELECTION_MODE");
+
+                break;
+            case APP_STATES.SHOW_MODE:
+                Debug.Log("Dev-> SHOW_MODE");
+
+                break;
+
+            default:
+                break;
+        }
     }
 }
