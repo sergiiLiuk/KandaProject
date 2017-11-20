@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Academy.HoloToolkit.Unity
+namespace Academy.Toolkit.Unity
 {
     public enum PivotAxis
     {

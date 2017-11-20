@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Academy.HoloToolkit.Unity
+namespace Academy.Toolkit.Unity
 {
     /// <summary>
     /// DirectionIndicator creates an indicator around the cursor showing

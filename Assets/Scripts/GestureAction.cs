@@ -13,7 +13,7 @@ public class GestureAction : MonoBehaviour
     private Vector3 manipulationPreviousPosition;
 
     private float rotationFactor;
-
+ 
     void Update()
     {
         PerformRotation();

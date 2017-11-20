@@ -1,5 +1,6 @@
 ﻿using Academy.HoloToolkit.Unity;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// InteractibleManager keeps tracks of which GameObject
@@ -43,9 +44,18 @@ public class InteractibleManager : Singleton<InteractibleManager>
 
             if (FocusedGameObject != null)
             {
+
                 if (FocusedGameObject.GetComponent<Interactible>() != null)
                 {
                     FocusedGameObject.SendMessage("GazeEntered");
+                }
+
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
+                {
+                    if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
+                    {
+                        oldFocusedGameObject.SendMessage("GazeEntered");
+                    }
                 }
             }
         }
@@ -58,6 +68,14 @@ public class InteractibleManager : Singleton<InteractibleManager>
             if (oldFocusedGameObject.GetComponent<Interactible>() != null)
             {
                 oldFocusedGameObject.SendMessage("GazeExited");
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
+            {
+                if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
+                {
+                    oldFocusedGameObject.SendMessage("GazeExited");
+                }
             }
         }
     }

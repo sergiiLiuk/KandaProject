@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MainScene.unity
+- path: C:/Users/kandadeveloper/Desktop/SergiiFiles/HolographicAcademy-Holograms-211-Gesture/HolographicAcademy-Holograms-211-Gesture/Completed/ModelExplorer/Assets/Scenes/ModelExplorer.unity
   isLoaded: 1
   isActive: 1

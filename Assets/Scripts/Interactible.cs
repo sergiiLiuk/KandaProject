@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -16,10 +17,23 @@ public class Interactible : MonoBehaviour
     [Space]
     [Header("Menu")]
     [HideInInspector]
-    public static bool menuBtnTimer = false;
-    Image fillMenuBtn;
+    private bool onAirBtnTimer;
+    private bool onSeaBtnTimer;
+    private bool onLandBtnTimer;
+
+    private Button BtnAir;
+    private Button BtnSea;
+    private Button BtnLand;
+
     float time = 0;
 
+    private MENU_BUTTON currentMenuButton;
+    public enum MENU_BUTTON
+    {
+        ON_AIR,
+        ON_SEA,
+        ON_LAND
+    }
 
     void Start()
     {
@@ -34,7 +48,10 @@ public class Interactible : MonoBehaviour
 
         EnableAudioHapticFeedback();
 
-        fillMenuBtn = this.GetComponent<Image>();
+        BtnAir = GameObject.Find("BtnAir").GetComponent<Button>();
+        BtnSea = GameObject.Find("BtnSea").GetComponent<Button>();
+        BtnLand = GameObject.Find("BtnLand").GetComponent<Button>();
+
     }
 
     void Update()
@@ -63,30 +80,66 @@ public class Interactible : MonoBehaviour
 
     private void MenuBtnPressCountDown()
     {
-        //When timer is out then Gesture set to default
-        if (menuBtnTimer == true)
+
+        switch (currentMenuButton)
         {
-            time += Time.deltaTime;
-            Debug.Log("t: " + time);
+            case MENU_BUTTON.ON_AIR:
+                if (onAirBtnTimer == true)
+                {
+                    time += Time.deltaTime;
+                    BtnAir.image.fillAmount = time;
 
-            if (fillMenuBtn != null)
-            {
-                Debug.Log("Yes");
-                fillMenuBtn.fillAmount = time;
-            }
-            else
-            {
-                Debug.Log("No");
-                return;
-            }
+                    if (time >= 3f)
+                    {
+                        onAirBtnTimer = false;
+                        time = 0;
+                        AppManager.appState = AppManager.APP_STATES.PLACING_MODE;
+                        SceneManager.LoadScene("AirScene", LoadSceneMode.Additive);
 
-            if (time >= 3f)
-            {
-                menuBtnTimer = false;
-                time = 0;
-                Debug.Log("Done");
-            }
+                    }
+                }
+                break;
+
+            case MENU_BUTTON.ON_SEA:
+                if (onSeaBtnTimer == true)
+                {
+                    time += Time.deltaTime;
+
+                    Debug.Log("Sea Yes");
+                    BtnSea.image.fillAmount = time;
+
+                    if (time >= 3f)
+                    {
+                        onSeaBtnTimer = false;
+                        time = 0;
+                        Debug.Log("Sea Done");
+                    }
+                }
+
+                break;
+            case MENU_BUTTON.ON_LAND:
+                if (onLandBtnTimer == true)
+                {
+                    time += Time.deltaTime;
+
+                    Debug.Log("Land Yes");
+                    BtnLand.image.fillAmount = time;
+
+                    if (time >= 3f)
+                    {
+                        onLandBtnTimer = false;
+                        time = 0;
+                        Debug.Log("Land Done");
+                    }
+                }
+                break;
+
+            default:
+                break;
         }
+
+
+
     }
 
     void GazeEntered()
@@ -106,13 +159,19 @@ public class Interactible : MonoBehaviour
         {
             defaultMaterials[i].SetFloat("_Highlight", 0f);
         }*/
-        menuBtnTimer = false;
-        if (fillMenuBtn)
-            fillMenuBtn.fillAmount = 0;
+        onAirBtnTimer = false;
+        BtnAir.image.fillAmount = 0;
+
+        onSeaBtnTimer = false;
+        BtnSea.image.fillAmount = 0;
+
+        onLandBtnTimer = false;
+        BtnLand.image.fillAmount = 0;
+
         time = 0;
     }
 
-    void OnSelect()
+    void OnSelect( )
     {
         /*for (int i = 0; i < defaultMaterials.Length; i++)
         {
@@ -120,34 +179,39 @@ public class Interactible : MonoBehaviour
         }*/
 
         // Play the audioSource feedback when we gaze and select a hologram.
+        
+
         if (audioSource != null && !audioSource.isPlaying)
         {
             audioSource.Play();
         }
 
-        this.SendMessage("PerformTagAlong");
-        this.SendMessage("PerfomText");
+        //this.SendMessage("PerformTagAlong");
+        //this.SendMessage("PerfomText");
     }
 
-    void OnGazeEntered(string itemSelected)
+    void OnGazeEntered(string btnPressed)
     {
-        switch (itemSelected)
+        switch (btnPressed)
         {
             case "BtnAir":
                 Debug.Log("Dev-> BtnAir");
-                menuBtnTimer = true;
+                currentMenuButton = MENU_BUTTON.ON_AIR;
+                onAirBtnTimer = true;
 
                 break;
 
             case "BtnSea":
                 Debug.Log("Dev-> BtnSea");
-                menuBtnTimer = true;
+                currentMenuButton = MENU_BUTTON.ON_SEA;
+                onSeaBtnTimer = true;
 
                 break;
 
             case "BtnLand":
                 Debug.Log("Dev-> BtnLand");
-                menuBtnTimer = true;
+                currentMenuButton = MENU_BUTTON.ON_LAND;
+                onLandBtnTimer = true;
 
                 break;
 
