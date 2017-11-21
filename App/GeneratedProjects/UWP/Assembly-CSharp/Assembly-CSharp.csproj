@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54825ff5-32d1-4388-9887-dc9441432c12}</ProjectGuid>
+    <ProjectGuid>{09f27a79-07c8-488c-a15c-1de9cac9b682}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -392,11 +392,14 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAction.cs">
       <Link>Scripts\InteractibleAction.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleActionAirScene.cs">
+      <Link>Scripts\InteractibleActionAirScene.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir.cs">
+      <Link>Scripts\InteractibleAir.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleManager.cs">
       <Link>Scripts\InteractibleManager.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleModel.cs">
-      <Link>Scripts\InteractibleModel.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\Interpolator.cs">
       <Link>Scripts\Interpolator.cs</Link>

@@ -14,6 +14,8 @@ namespace Academy.HoloToolkit.Unity
         // Currently active gesture recognizer.
         public GestureRecognizer ActiveRecognizer { get; private set; }
 
+        public GestureRecognizer DefaultRecognizer { get; private set; }
+
         public bool IsNavigating { get; private set; }
 
         public Vector3 NavigationPosition { get; private set; }
@@ -22,18 +24,25 @@ namespace Academy.HoloToolkit.Unity
 
         public Vector3 ManipulationPosition { get; private set; }
 
+        private GestureRecognizer CurrentRecognizer;
+
+        public int currentGestureState = 0;
+
         void Awake()
         {
             /* TODO: DEVELOPER CODING EXERCISE 2.b */
 
             // 2.b: Instantiate the NavigationRecognizer.
             NavigationRecognizer = new GestureRecognizer();
+            DefaultRecognizer = new GestureRecognizer();
+            // Instantiate the ManipulationRecognizer.
+            ManipulationRecognizer = new GestureRecognizer();
 
             // 2.b: Add Tap and NavigationX GestureSettings to the NavigationRecognizer's RecognizableGestures.
-            NavigationRecognizer.SetRecognizableGestures(
-                GestureSettings.Tap |
-                GestureSettings.NavigationX);
-
+            NavigationRecognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.NavigationX);
+            DefaultRecognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.DoubleTap);
+            // Add the ManipulationTranslate GestureSetting to the ManipulationRecognizer's RecognizableGestures.
+            ManipulationRecognizer.SetRecognizableGestures(GestureSettings.ManipulationTranslate);
 
             // 2.b: Register for the Tapped with the NavigationRecognizer_Tapped function.
             NavigationRecognizer.Tapped += NavigationRecognizer_Tapped;
@@ -46,18 +55,14 @@ namespace Academy.HoloToolkit.Unity
             // 2.b: Register for the NavigationCanceled with the NavigationRecognizer_NavigationCanceled function. 
             NavigationRecognizer.NavigationCanceled += NavigationRecognizer_NavigationCanceled;
 
-            // Instantiate the ManipulationRecognizer.
-            ManipulationRecognizer = new GestureRecognizer();
-
-            // Add the ManipulationTranslate GestureSetting to the ManipulationRecognizer's RecognizableGestures.
-            ManipulationRecognizer.SetRecognizableGestures(
-                GestureSettings.ManipulationTranslate);
-
             // Register for the Manipulation events on the ManipulationRecognizer.
+            ManipulationRecognizer.TappedEvent += ManipulationRecognizer_TappedEvent;
             ManipulationRecognizer.ManipulationStarted += ManipulationRecognizer_ManipulationStarted;
             ManipulationRecognizer.ManipulationUpdated += ManipulationRecognizer_ManipulationUpdated;
             ManipulationRecognizer.ManipulationCompleted += ManipulationRecognizer_ManipulationCompleted;
             ManipulationRecognizer.ManipulationCanceled += ManipulationRecognizer_ManipulationCanceled;
+
+            DefaultRecognizer.TappedEvent += DoubleTapRecognizer_TappedEvent;
 
             ResetGestureRecognizers();
         }
@@ -66,7 +71,6 @@ namespace Academy.HoloToolkit.Unity
         {
             // 2.b: Unregister the Tapped and Navigation events on the NavigationRecognizer.
             NavigationRecognizer.Tapped -= NavigationRecognizer_Tapped;
-
             NavigationRecognizer.NavigationStarted -= NavigationRecognizer_NavigationStarted;
             NavigationRecognizer.NavigationUpdated -= NavigationRecognizer_NavigationUpdated;
             NavigationRecognizer.NavigationCompleted -= NavigationRecognizer_NavigationCompleted;
@@ -74,10 +78,14 @@ namespace Academy.HoloToolkit.Unity
 
 
             // Unregister the Manipulation events on the ManipulationRecognizer.
+            ManipulationRecognizer.TappedEvent -= ManipulationRecognizer_TappedEvent;
             ManipulationRecognizer.ManipulationStarted -= ManipulationRecognizer_ManipulationStarted;
             ManipulationRecognizer.ManipulationUpdated -= ManipulationRecognizer_ManipulationUpdated;
             ManipulationRecognizer.ManipulationCompleted -= ManipulationRecognizer_ManipulationCompleted;
             ManipulationRecognizer.ManipulationCanceled -= ManipulationRecognizer_ManipulationCanceled;
+
+            DefaultRecognizer.TappedEvent -= DoubleTapRecognizer_TappedEvent;
+             
         }
 
         /// <summary>
@@ -86,13 +94,45 @@ namespace Academy.HoloToolkit.Unity
         public void ResetGestureRecognizers()
         {
             // Default to the navigation gestures.
-            Transition(NavigationRecognizer);
+            if (currentGestureState == 0)
+            {
+                CurrentRecognizer = DefaultRecognizer;
+            }
+
+            else if (currentGestureState == 1)
+            {
+                CurrentRecognizer = ManipulationRecognizer;
+            }
+
+            else if (currentGestureState == 2)
+            {
+                // CurrentRecognizer = RotationRecognizer;
+            }
+
+            else if (currentGestureState == 3)
+            {
+                //CurrentRecognizer = ScalingRecognizer;
+            }
+
+            Transition(CurrentRecognizer);
         }
 
         /// <summary>
         /// Transition to a new GestureRecognizer.
         /// </summary>
         /// <param name="newRecognizer">The GestureRecognizer to transition to.</param>
+        /// 
+        private void DoubleTapRecognizer_TappedEvent(InteractionSourceKind source, int tapCount, Ray headRay)
+        {
+            GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
+
+            if (focusedObject != null)
+            {
+                focusedObject.SendMessageUpwards("OnSelect");
+            }
+            //MainMenuTapController(tapCount);
+        }
+
         public void Transition(GestureRecognizer newRecognizer)
         {
             if (newRecognizer == null)
@@ -124,7 +164,7 @@ namespace Academy.HoloToolkit.Unity
             NavigationPosition = Vector3.zero;
         }
 
-		private void NavigationRecognizer_NavigationUpdated(NavigationUpdatedEventArgs obj)
+        private void NavigationRecognizer_NavigationUpdated(NavigationUpdatedEventArgs obj)
         {
             // 2.b: Set IsNavigating to be true.
             IsNavigating = true;
@@ -133,7 +173,7 @@ namespace Academy.HoloToolkit.Unity
             NavigationPosition = obj.normalizedOffset;
         }
 
-		private void NavigationRecognizer_NavigationCompleted(NavigationCompletedEventArgs obj)
+        private void NavigationRecognizer_NavigationCompleted(NavigationCompletedEventArgs obj)
         {
             // 2.b: Set IsNavigating to be false.
             IsNavigating = false;
@@ -144,6 +184,19 @@ namespace Academy.HoloToolkit.Unity
             // 2.b: Set IsNavigating to be false.
             IsNavigating = false;
         }
+
+        private void RotationRecognizer_TappedEvent(InteractionSourceKind source, int tapCount, Ray ray)
+        {
+            GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
+
+            if (focusedObject != null)
+            {
+                focusedObject.SendMessageUpwards("OnSelect");
+            }
+            //MainMenuTapController(tapCount);
+        }
+
+        //------------------------------------------------------------------------------------------------------
 
         private void ManipulationRecognizer_ManipulationStarted(ManipulationStartedEventArgs obj)
         {
@@ -187,6 +240,17 @@ namespace Academy.HoloToolkit.Unity
             {
                 focusedObject.SendMessageUpwards("OnSelect");
             }
+        }
+
+        private void ManipulationRecognizer_TappedEvent(InteractionSourceKind source, int tapCount, Ray ray)
+        {
+            GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
+
+            if (focusedObject != null)
+            {
+                focusedObject.SendMessageUpwards("OnSelect");
+            }
+            //MainMenuTapController(tapCount);
         }
     }
 }

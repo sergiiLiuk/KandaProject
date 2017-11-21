@@ -52,7 +52,7 @@ public class InteractibleManager : Singleton<InteractibleManager>
 
                 if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
                 {
-                    if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
+                    if (oldFocusedGameObject.GetComponent<InteractibleAir>() != null)
                     {
                         oldFocusedGameObject.SendMessage("GazeEntered");
                     }
@@ -72,7 +72,7 @@ public class InteractibleManager : Singleton<InteractibleManager>
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
             {
-                if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
+                if (oldFocusedGameObject.GetComponent<InteractibleAir>() != null)
                 {
                     oldFocusedGameObject.SendMessage("GazeExited");
                 }

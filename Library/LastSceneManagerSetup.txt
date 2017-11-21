@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/kandadeveloper/Desktop/SergiiFiles/HolographicAcademy-Holograms-211-Gesture/HolographicAcademy-Holograms-211-Gesture/Completed/ModelExplorer/Assets/Scenes/ModelExplorer.unity
+- path: C:/Users/kandadeveloper/Desktop/SergiiFiles/Best Green Projects/HoloHeatpump/Assets/Scenes/MainScene.unity
   isLoaded: 1
   isActive: 1

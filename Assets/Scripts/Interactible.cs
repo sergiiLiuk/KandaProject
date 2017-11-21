@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,6 +12,13 @@ public class Interactible : MonoBehaviour
     [Tooltip("Audio clip to play when interacting with this hologram.")]
     public AudioClip TargetFeedbackSound;
     private AudioSource audioSource;
+
+    #region Audio
+    [Space]
+    [Header("Audio Sources")]
+    [Tooltip("Audio clip to play on object dismiss.")]
+    public AudioClip OnClickFeedbackSound;
+    #endregion 
 
     private Material[] defaultMaterials;
 
@@ -46,41 +54,18 @@ public class Interactible : MonoBehaviour
             gameObject.AddComponent<BoxCollider>();
         }
 
-        EnableAudioHapticFeedback();
-
         BtnAir = GameObject.Find("BtnAir").GetComponent<Button>();
         BtnSea = GameObject.Find("BtnSea").GetComponent<Button>();
         BtnLand = GameObject.Find("BtnLand").GetComponent<Button>();
-
     }
 
     void Update()
     {
         MenuBtnPressCountDown();
-
-    }
-
-    private void EnableAudioHapticFeedback()
-    {
-        // If this hologram has an audio clip, add an AudioSource with this clip.
-        if (TargetFeedbackSound != null)
-        {
-            audioSource = GetComponent<AudioSource>();
-            if (audioSource == null)
-            {
-                audioSource = gameObject.AddComponent<AudioSource>();
-            }
-
-            audioSource.clip = TargetFeedbackSound;
-            audioSource.playOnAwake = false;
-            audioSource.spatialBlend = 1;
-            audioSource.dopplerLevel = 0;
-        }
     }
 
     private void MenuBtnPressCountDown()
     {
-
         switch (currentMenuButton)
         {
             case MENU_BUTTON.ON_AIR:
@@ -91,11 +76,10 @@ public class Interactible : MonoBehaviour
 
                     if (time >= 3f)
                     {
-                        onAirBtnTimer = false;
+                        this.SendMessageUpwards("OnAirButton");
                         time = 0;
-                        AppManager.appState = AppManager.APP_STATES.PLACING_MODE;
-                        SceneManager.LoadScene("AirScene", LoadSceneMode.Additive);
-
+                        onAirBtnTimer = false;
+                        OnClickAudioFeedback();
                     }
                 }
                 break;
@@ -104,15 +88,14 @@ public class Interactible : MonoBehaviour
                 if (onSeaBtnTimer == true)
                 {
                     time += Time.deltaTime;
-
-                    Debug.Log("Sea Yes");
                     BtnSea.image.fillAmount = time;
 
                     if (time >= 3f)
                     {
-                        onSeaBtnTimer = false;
                         time = 0;
                         Debug.Log("Sea Done");
+                        OnClickAudioFeedback();
+                        onSeaBtnTimer = false;
                     }
                 }
 
@@ -121,15 +104,14 @@ public class Interactible : MonoBehaviour
                 if (onLandBtnTimer == true)
                 {
                     time += Time.deltaTime;
-
-                    Debug.Log("Land Yes");
                     BtnLand.image.fillAmount = time;
 
                     if (time >= 3f)
                     {
-                        onLandBtnTimer = false;
                         time = 0;
                         Debug.Log("Land Done");
+                        OnClickAudioFeedback();
+                        onLandBtnTimer = false;
                     }
                 }
                 break;
@@ -171,7 +153,7 @@ public class Interactible : MonoBehaviour
         time = 0;
     }
 
-    void OnSelect( )
+    void OnSelect()
     {
         /*for (int i = 0; i < defaultMaterials.Length; i++)
         {
@@ -179,7 +161,7 @@ public class Interactible : MonoBehaviour
         }*/
 
         // Play the audioSource feedback when we gaze and select a hologram.
-        
+
 
         if (audioSource != null && !audioSource.isPlaying)
         {
@@ -217,6 +199,27 @@ public class Interactible : MonoBehaviour
 
             default:
                 break;
+        }
+    }
+
+    void OnClickAudioFeedback()
+    {
+        if (OnClickFeedbackSound != null)
+        {
+            GameObject audioGameObject = new GameObject();
+            audioGameObject.transform.position = gameObject.transform.position;
+            AudioSource audioSource = audioGameObject.GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = audioGameObject.AddComponent<AudioSource>();
+            }
+            audioSource.clip = OnClickFeedbackSound;
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 1;
+            audioSource.dopplerLevel = 0;
+
+            audioSource.Play();
+
         }
     }
 
