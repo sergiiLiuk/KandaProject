@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{09f27a79-07c8-488c-a15c-1de9cac9b682}</ProjectGuid>
+    <ProjectGuid>{0812967b-d064-4a34-8a4a-ac7a4432e9cf}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -392,8 +392,8 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAction.cs">
       <Link>Scripts\InteractibleAction.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleActionAirScene.cs">
-      <Link>Scripts\InteractibleActionAirScene.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleActionAir.cs">
+      <Link>Scripts\InteractibleActionAir.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir.cs">
       <Link>Scripts\InteractibleAir.cs</Link>
@@ -403,6 +403,9 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\Interpolator.cs">
       <Link>Scripts\Interpolator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\LoadOnStart.cs">
+      <Link>Scripts\LoadOnStart.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\UnloadUnusedAssets.cs">
       <Link>Scripts\UnloadUnusedAssets.cs</Link>

@@ -49,9 +49,12 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 {
                     FocusedGameObject.SendMessage("GazeEntered");
                 }
+                SceneManager.MergeScenes(SceneManager.GetSceneByName("OnAppLoadScene"), SceneManager.GetSceneByName("AirScene"));
 
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
+                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("OnAppLoadScene"))
                 {
+
+                    Debug.Log("HEREEEEE");
                     if (oldFocusedGameObject.GetComponent<InteractibleAir>() != null)
                     {
                         oldFocusedGameObject.SendMessage("GazeEntered");

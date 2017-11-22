@@ -13,7 +13,7 @@ public class GestureAction : MonoBehaviour
     private Vector3 manipulationPreviousPosition;
 
     private float rotationFactor;
- 
+
     void Update()
     {
         PerformRotation();
@@ -41,7 +41,10 @@ public class GestureAction : MonoBehaviour
 
     void PerformManipulationUpdate(Vector3 position)
     {
-        if (GestureManager.Instance.IsManipulating)
+        //Debug.Log("Focused Obj: " + HandsManager.Instance.FocusedGameObject);
+        //Debug.Log("Curr Obj:" + gameObject);
+
+        if (GestureManager.Instance.IsManipulating && HandsManager.Instance.FocusedGameObject == gameObject)
         {
             /* TODO: DEVELOPER CODING EXERCISE 4.a */
 

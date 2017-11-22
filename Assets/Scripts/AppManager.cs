@@ -17,6 +17,8 @@ public class AppManager : Singleton<AppManager>
     delegate void KeywordAction(PhraseRecognizedEventArgs args);
     Dictionary<string, KeywordAction> keywordCollection;
 
+    public GameObject SelectionMenu;
+
     public enum APP_STATES
     {
         MENU,
@@ -64,13 +66,13 @@ public class AppManager : Singleton<AppManager>
     public void InitiateDefaultRecognizer()
     {
         GestureManager.Instance.Transition(GestureManager.Instance.DefaultRecognizer);
-        GestureManager.Instance.currentGestureState = 0;
+        //GestureManager.Instance.currentGestureState = 0;
     }
 
     public void InitiateManipulationRecognizer()
     {
         GestureManager.Instance.Transition(GestureManager.Instance.ManipulationRecognizer);
-        GestureManager.Instance.currentGestureState = 1;
+        //GestureManager.Instance.currentGestureState = 1;
 
         // Refresh default Gesture timer
         //timerDone = false;
@@ -80,7 +82,7 @@ public class AppManager : Singleton<AppManager>
     public void InitiateNavigationRecognizer()
     {
         GestureManager.Instance.Transition(GestureManager.Instance.NavigationRecognizer);
-        GestureManager.Instance.currentGestureState = 2;
+        //GestureManager.Instance.currentGestureState = 2;
         // Refresh default Gesture timer
         //timerDone = false;
         //Instance.DefaultRecognizerTimer = 6.0f;
@@ -102,12 +104,7 @@ public class AppManager : Singleton<AppManager>
 
                 break;
             case APP_STATES.PLACING_MODE:
-
-                GameObject menu = GameObject.Find("SelectionMenu");
-                if (menu != null)
-                {
-                    menu.SetActive(false);
-                }
+                SelectionMenu.SetActive(false);
                 //Debug.Log("Dev-> Scene is --AirScene-- Loaded");
                 //Debug.Log("Dev-> PLACING_MODE");
 

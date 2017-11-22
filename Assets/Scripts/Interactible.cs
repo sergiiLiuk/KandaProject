@@ -23,7 +23,7 @@ public class Interactible : MonoBehaviour
     private Material[] defaultMaterials;
 
     [Space]
-    [Header("Menu")]
+    [Header("SelectionMenu")]
     [HideInInspector]
     private bool onAirBtnTimer;
     private bool onSeaBtnTimer;

@@ -9,17 +9,18 @@ public class InteractibleAir : MonoBehaviour
     [Header("Audio Sources")]
     [Tooltip("Audio clip to play on object dismiss.")]
     public AudioClip OnClickFeedbackSound;
-    #endregion 
+    #endregion
 
     /*void GazeExited()
     {
 
     }*/
 
-    /* void GazeEntered()
-     {
-
-     }*/
+    void GazeEntered()
+    {
+        Debug.Log("TEst");
+        Debug.Log("curr Object: " + this.gameObject.name);
+    }
 
     void OnSelect()
     {
@@ -28,11 +29,11 @@ public class InteractibleAir : MonoBehaviour
             defaultMaterials[i].SetFloat("_Highlight", .5f);
         }*/
 
-        switch (this.gameObject.name)
+        switch (gameObject.name)
         {
             case "CubeModel":
                 Debug.Log("Dev-> Cube Selected");
-                this.SendMessageUpwards("CubeAction");
+                this.SendMessage("CubeAction");
                 OnClickAudioFeedback();
                 break;
 
@@ -49,21 +50,21 @@ public class InteractibleAir : MonoBehaviour
                 break;
             //--------------------------------------
 
-            case "BtnPlaceCube":
+            case "BtnFixPosCube":
                 Debug.Log("Dev-> Cube Placed");
-                this.SendMessageUpwards("PlaceCube");
+                this.SendMessage("FixPosCube");
                 OnClickAudioFeedback();
                 break;
 
-            case "BtnPlaceCylinder":
+            case "BtnFixPosCylinder":
                 Debug.Log("Dev-> Cylinder Placed");
-                //this.SendMessageUpwards("PlaceCylinder");
+                this.SendMessage("FixPoxCylinder");
                 OnClickAudioFeedback();
                 break;
 
-            case "BtnPlaceSphere":
+            case "BtnFixPosSphere":
                 Debug.Log("Dev-> Sphere Placed");
-                this.SendMessageUpwards("PlaceSphere");
+                this.SendMessage("FixPosSphere");
                 OnClickAudioFeedback();
                 break;
 
