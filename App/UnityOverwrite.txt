@@ -5,11 +5,30 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-ModelExplorer.sln: modified
+Kanda Project.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
+Kanda Project\App.cs: 05ED3FDDC42B747079A20582A096C491
+Kanda Project\Kanda Project.csproj: 88B4B9CDEF5E1A2FB83CFE12B5B963DD
+Kanda Project\Kanda Project.csproj.user: modified
+Kanda Project\Package.appxmanifest: E71CD2B3079671DF5D62F628F4734F70
+Kanda Project\project.json: 1D02BC64BAC0D041019673A1C4C51737
+Kanda Project\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
+Kanda Project\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+Kanda Project\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+Kanda Project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+Kanda Project\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+Kanda Project\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+Kanda Project\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
+Kanda Project\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+Kanda Project\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+Kanda Project\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+Kanda Project\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+Kanda Project\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+Kanda Project\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
+Kanda Project\obj\x86\Release\Kanda Project.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
+Kanda Project\Properties\AssemblyInfo.cs: 5E9EB9E7456C854F6414C658BE79C939
+Kanda Project\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 ModelExplorer\App.cs: 3C91688F763D4ACE0EE47104B0A490C6
-ModelExplorer\ModelExplorer.csproj: modified
-ModelExplorer\ModelExplorer.csproj.user: modified
 ModelExplorer\Package.appxmanifest: F335F450EACD660C323CA16981769594
 ModelExplorer\project.json: 1D02BC64BAC0D041019673A1C4C51737
 ModelExplorer\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
@@ -25,6 +44,5 @@ ModelExplorer\bin\x86\Debug\AppX\Assets\Square44x44Logo.targetsize-24_altform-un
 ModelExplorer\bin\x86\Debug\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 ModelExplorer\bin\x86\Debug\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
 ModelExplorer\bin\x86\Debug\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
-ModelExplorer\obj\x86\Debug\ModelExplorer.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 ModelExplorer\Properties\AssemblyInfo.cs: C0120CD08FA0B86B4E4A9C551E0F50DF
 ModelExplorer\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

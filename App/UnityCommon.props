@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <UnityWSASolutionName>ModelExplorer</UnityWSASolutionName>
+        <UnityWSASolutionName>Kanda Project</UnityWSASolutionName>
         <UnityWSASolutionDir>C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\</UnityWSASolutionDir>
         <UnityProjectDir>C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\</UnityProjectDir>
         <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>

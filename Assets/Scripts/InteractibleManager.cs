@@ -49,17 +49,6 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 {
                     FocusedGameObject.SendMessage("GazeEntered");
                 }
-                SceneManager.MergeScenes(SceneManager.GetSceneByName("OnAppLoadScene"), SceneManager.GetSceneByName("AirScene"));
-
-                if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("OnAppLoadScene"))
-                {
-
-                    Debug.Log("HEREEEEE");
-                    if (oldFocusedGameObject.GetComponent<InteractibleAir>() != null)
-                    {
-                        oldFocusedGameObject.SendMessage("GazeEntered");
-                    }
-                }
             }
         }
     }
@@ -73,13 +62,11 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 oldFocusedGameObject.SendMessage("GazeExited");
             }
 
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("AirScene"))
+            /*if (oldFocusedGameObject.GetComponent<InteractibleAirModels>() != null)
             {
-                if (oldFocusedGameObject.GetComponent<InteractibleAir>() != null)
-                {
-                    oldFocusedGameObject.SendMessage("GazeExited");
-                }
-            }
+                oldFocusedGameObject.SendMessage("GazeExited");
+            }*/
+
         }
     }
 }

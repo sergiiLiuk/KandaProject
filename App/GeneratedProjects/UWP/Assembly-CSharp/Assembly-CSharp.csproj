@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0812967b-d064-4a34-8a4a-ac7a4432e9cf}</ProjectGuid>
+    <ProjectGuid>{9ff5b2f3-e7df-47ea-9f97-b6287396ddfb}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -392,11 +392,11 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAction.cs">
       <Link>Scripts\InteractibleAction.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleActionAir.cs">
-      <Link>Scripts\InteractibleActionAir.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir\Models\InteractibleActionAirModels.cs">
+      <Link>Scripts\InteractibleAir\Models\InteractibleActionAirModels.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir.cs">
-      <Link>Scripts\InteractibleAir.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir\Models\InteractibleAirModels.cs">
+      <Link>Scripts\InteractibleAir\Models\InteractibleAirModels.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleManager.cs">
       <Link>Scripts\InteractibleManager.cs</Link>

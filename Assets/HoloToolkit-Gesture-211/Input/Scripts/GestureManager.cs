@@ -85,7 +85,7 @@ namespace Academy.HoloToolkit.Unity
             ManipulationRecognizer.ManipulationCanceled -= ManipulationRecognizer_ManipulationCanceled;
 
             DefaultRecognizer.TappedEvent -= DoubleTapRecognizer_TappedEvent;
-             
+
         }
 
         /// <summary>
@@ -129,8 +129,8 @@ namespace Academy.HoloToolkit.Unity
             if (focusedObject != null)
             {
                 focusedObject.SendMessageUpwards("OnSelect");
+
             }
-            //MainMenuTapController(tapCount);
         }
 
         public void Transition(GestureRecognizer newRecognizer)
@@ -187,13 +187,13 @@ namespace Academy.HoloToolkit.Unity
 
         private void RotationRecognizer_TappedEvent(InteractionSourceKind source, int tapCount, Ray ray)
         {
+
             GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
 
             if (focusedObject != null)
             {
                 focusedObject.SendMessageUpwards("OnSelect");
             }
-            //MainMenuTapController(tapCount);
         }
 
         //------------------------------------------------------------------------------------------------------
@@ -250,7 +250,6 @@ namespace Academy.HoloToolkit.Unity
             {
                 focusedObject.SendMessageUpwards("OnSelect");
             }
-            //MainMenuTapController(tapCount);
         }
     }
 }

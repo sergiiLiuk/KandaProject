@@ -1,4 +1,7 @@
 sceneSetups:
-- path: C:/Users/kandadeveloper/Desktop/SergiiFiles/Best Green Projects/HoloHeatpump/Assets/Scenes/MainScene.unity
+- path: Assets/Scenes/OnAppLoadScene.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/AirScene.unity
   isLoaded: 1
   isActive: 1

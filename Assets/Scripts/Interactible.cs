@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -13,13 +11,14 @@ public class Interactible : MonoBehaviour
     public AudioClip TargetFeedbackSound;
     private AudioSource audioSource;
 
+    /*
     #region Audio
     [Space]
     [Header("Audio Sources")]
     [Tooltip("Audio clip to play on object dismiss.")]
     public AudioClip OnClickFeedbackSound;
     #endregion 
-
+    */
     private Material[] defaultMaterials;
 
     [Space]
@@ -79,7 +78,7 @@ public class Interactible : MonoBehaviour
                         this.SendMessageUpwards("OnAirButton");
                         time = 0;
                         onAirBtnTimer = false;
-                        OnClickAudioFeedback();
+                         
                     }
                 }
                 break;
@@ -94,7 +93,7 @@ public class Interactible : MonoBehaviour
                     {
                         time = 0;
                         Debug.Log("Sea Done");
-                        OnClickAudioFeedback();
+                        
                         onSeaBtnTimer = false;
                     }
                 }
@@ -110,7 +109,7 @@ public class Interactible : MonoBehaviour
                     {
                         time = 0;
                         Debug.Log("Land Done");
-                        OnClickAudioFeedback();
+                    
                         onLandBtnTimer = false;
                     }
                 }
@@ -202,6 +201,7 @@ public class Interactible : MonoBehaviour
         }
     }
 
+    /*
     void OnClickAudioFeedback()
     {
         if (OnClickFeedbackSound != null)
@@ -222,5 +222,5 @@ public class Interactible : MonoBehaviour
 
         }
     }
-
+    */
 }
