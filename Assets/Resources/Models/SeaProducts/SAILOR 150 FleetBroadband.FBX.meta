@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 0fc057a5379ae904c94aecb59899d26c
+timeCreated: 1511784036
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: EditablePoly001
+    100002: EditablePoly001_MeshPart0
+    100004: EditablePoly001_MeshPart1
+    100006: EditablePoly001_MeshPart2
+    100008: EditablePoly001_MeshPart3
+    100010: EditablePoly001_MeshPart4
+    100012: Radome
+    100014: //RootNode
+    400000: EditablePoly001
+    400002: EditablePoly001_MeshPart0
+    400004: EditablePoly001_MeshPart1
+    400006: EditablePoly001_MeshPart2
+    400008: EditablePoly001_MeshPart3
+    400010: EditablePoly001_MeshPart4
+    400012: Radome
+    400014: //RootNode
+    2300000: EditablePoly001_MeshPart0
+    2300002: EditablePoly001_MeshPart1
+    2300004: EditablePoly001_MeshPart2
+    2300006: EditablePoly001_MeshPart3
+    2300008: EditablePoly001_MeshPart4
+    2300010: Radome
+    3300000: EditablePoly001_MeshPart0
+    3300002: EditablePoly001_MeshPart1
+    3300004: EditablePoly001_MeshPart2
+    3300006: EditablePoly001_MeshPart3
+    3300008: EditablePoly001_MeshPart4
+    3300010: Radome
+    4300000: EditablePoly001_MeshPart0
+    4300002: EditablePoly001_MeshPart1
+    4300004: EditablePoly001_MeshPart2
+    4300006: EditablePoly001_MeshPart3
+    4300008: EditablePoly001_MeshPart4
+    4300010: Radome
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Plastic
+    second: {fileID: 2100000, guid: 000495d4d26d71c43a8216c8588707ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blank metal
+    second: {fileID: 2100000, guid: 8c2873b99aa04294ca4ae7da0dc919f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome green
+    second: {fileID: 2100000, guid: 9885341e0b6d37948b3a27ee642b2166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper Metal
+    second: {fileID: 2100000, guid: 59030f1094ad08940a7aae0ae8b5c968, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper plastic
+    second: {fileID: 2100000, guid: d78409d92e479134eaf52d64875862b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Creme Plastic
+    second: {fileID: 2100000, guid: 85dab2c68f6247845adf53184210e330, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electronics Green
+    second: {fileID: 2100000, guid: d51be3bf1ef2a38428a33ca708ebd220, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electronics Orange
+    second: {fileID: 2100000, guid: 016e3b389bda2b04d8df3d5636af4adb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Matte metal
+    second: {fileID: 2100000, guid: 32b4a1c37cd95db4e89601b19c096d2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Radome White Plastic
+    second: {fileID: 2100000, guid: cb08f8cdec0c25142abe1b7a6aeae31e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber band
+    second: {fileID: 2100000, guid: ffd50371c042d4f4d8e69ae1af7f6f46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screws Metal
+    second: {fileID: 2100000, guid: 63c6cefaf0b4bbf4eb61374b833d821b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Plastic
+    second: {fileID: 2100000, guid: 3cc5999af8e7dbc4ea4caa8d465b7c83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White metal
+    second: {fileID: 2100000, guid: 23b04aab64ee77944b990368075915c9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

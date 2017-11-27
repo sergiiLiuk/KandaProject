@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AirScene.unity
     guid: 57f5683f5e2a01b4c833fcd59d439bc6
+  - enabled: 1
+    path: Assets/Scenes/SeaScene.unity
+    guid: e3deba03501815344823327f621c1928
+  - enabled: 1
+    path: Assets/Scenes/LandScene.unity
+    guid: 5106e1d080458ef439befad3930e1913

@@ -62,7 +62,7 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 oldFocusedGameObject.SendMessage("GazeExited");
             }
 
-            /*if (oldFocusedGameObject.GetComponent<InteractibleAirModels>() != null)
+            /*if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
             {
                 oldFocusedGameObject.SendMessage("GazeExited");
             }*/

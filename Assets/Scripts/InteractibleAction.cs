@@ -59,6 +59,20 @@ public class InteractibleAction : MonoBehaviour
         StartCoroutine(LoadAsyncScene("AirScene"));
     }
 
+    void OnSeaButton()
+    {
+        AppManager.appState = AppManager.APP_STATES.PLACING_MODE;
+        LoadSceneProgressBar.SetActive(true);
+        StartCoroutine(LoadAsyncScene("SeaScene"));
+    }
+
+    void OnLandButton()
+    {
+        AppManager.appState = AppManager.APP_STATES.PLACING_MODE;
+        LoadSceneProgressBar.SetActive(true);
+        StartCoroutine(LoadAsyncScene("LandScene"));
+    }
+
     private void UpdateSceneLoadProgressBar()
     {
         if (sceneBar)

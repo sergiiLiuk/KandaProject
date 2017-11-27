@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 91dc4564354cd804dafc6b44db221952
+timeCreated: 1511784085
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bottom Platform
+    100002: Radome
+    100004: //RootNode
+    100006: Sea Tel 9711 dual band system
+    100008: Sea Tel 9711 dual band system_MeshPart0
+    100010: Sea Tel 9711 dual band system_MeshPart1
+    100012: Sea Tel 9711 dual band system_MeshPart10
+    100014: Sea Tel 9711 dual band system_MeshPart11
+    100016: Sea Tel 9711 dual band system_MeshPart2
+    100018: Sea Tel 9711 dual band system_MeshPart3
+    100020: Sea Tel 9711 dual band system_MeshPart4
+    100022: Sea Tel 9711 dual band system_MeshPart5
+    100024: Sea Tel 9711 dual band system_MeshPart6
+    100026: Sea Tel 9711 dual band system_MeshPart7
+    100028: Sea Tel 9711 dual band system_MeshPart8
+    100030: Sea Tel 9711 dual band system_MeshPart9
+    400000: Bottom Platform
+    400002: Radome
+    400004: //RootNode
+    400006: Sea Tel 9711 dual band system
+    400008: Sea Tel 9711 dual band system_MeshPart0
+    400010: Sea Tel 9711 dual band system_MeshPart1
+    400012: Sea Tel 9711 dual band system_MeshPart10
+    400014: Sea Tel 9711 dual band system_MeshPart11
+    400016: Sea Tel 9711 dual band system_MeshPart2
+    400018: Sea Tel 9711 dual band system_MeshPart3
+    400020: Sea Tel 9711 dual band system_MeshPart4
+    400022: Sea Tel 9711 dual band system_MeshPart5
+    400024: Sea Tel 9711 dual band system_MeshPart6
+    400026: Sea Tel 9711 dual band system_MeshPart7
+    400028: Sea Tel 9711 dual band system_MeshPart8
+    400030: Sea Tel 9711 dual band system_MeshPart9
+    2300000: Bottom Platform
+    2300002: Radome
+    2300004: Sea Tel 9711 dual band system_MeshPart0
+    2300006: Sea Tel 9711 dual band system_MeshPart1
+    2300008: Sea Tel 9711 dual band system_MeshPart10
+    2300010: Sea Tel 9711 dual band system_MeshPart11
+    2300012: Sea Tel 9711 dual band system_MeshPart2
+    2300014: Sea Tel 9711 dual band system_MeshPart3
+    2300016: Sea Tel 9711 dual band system_MeshPart4
+    2300018: Sea Tel 9711 dual band system_MeshPart5
+    2300020: Sea Tel 9711 dual band system_MeshPart6
+    2300022: Sea Tel 9711 dual band system_MeshPart7
+    2300024: Sea Tel 9711 dual band system_MeshPart8
+    2300026: Sea Tel 9711 dual band system_MeshPart9
+    3300000: Bottom Platform
+    3300002: Radome
+    3300004: Sea Tel 9711 dual band system_MeshPart0
+    3300006: Sea Tel 9711 dual band system_MeshPart1
+    3300008: Sea Tel 9711 dual band system_MeshPart10
+    3300010: Sea Tel 9711 dual band system_MeshPart11
+    3300012: Sea Tel 9711 dual band system_MeshPart2
+    3300014: Sea Tel 9711 dual band system_MeshPart3
+    3300016: Sea Tel 9711 dual band system_MeshPart4
+    3300018: Sea Tel 9711 dual band system_MeshPart5
+    3300020: Sea Tel 9711 dual band system_MeshPart6
+    3300022: Sea Tel 9711 dual band system_MeshPart7
+    3300024: Sea Tel 9711 dual band system_MeshPart8
+    3300026: Sea Tel 9711 dual band system_MeshPart9
+    4300000: Radome
+    4300002: Bottom Platform
+    4300004: Sea Tel 9711 dual band system_MeshPart0
+    4300006: Sea Tel 9711 dual band system_MeshPart1
+    4300008: Sea Tel 9711 dual band system_MeshPart2
+    4300010: Sea Tel 9711 dual band system_MeshPart3
+    4300012: Sea Tel 9711 dual band system_MeshPart4
+    4300014: Sea Tel 9711 dual band system_MeshPart5
+    4300016: Sea Tel 9711 dual band system_MeshPart6
+    4300018: Sea Tel 9711 dual band system_MeshPart7
+    4300020: Sea Tel 9711 dual band system_MeshPart8
+    4300022: Sea Tel 9711 dual band system_MeshPart9
+    4300024: Sea Tel 9711 dual band system_MeshPart10
+    4300026: Sea Tel 9711 dual band system_MeshPart11
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Plastic
+    second: {fileID: 2100000, guid: 000495d4d26d71c43a8216c8588707ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black metal
+    second: {fileID: 2100000, guid: 68018be27460306478fc4c83fff7d9f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blank metal
+    second: {fileID: 2100000, guid: 8c2873b99aa04294ca4ae7da0dc919f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark Blue Metal
+    second: {fileID: 2100000, guid: 6e6e2feb6970baa40b0c13e26b84c6b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electronics Green
+    second: {fileID: 2100000, guid: d51be3bf1ef2a38428a33ca708ebd220, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electronics Orange
+    second: {fileID: 2100000, guid: 016e3b389bda2b04d8df3d5636af4adb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gun Metal
+    second: {fileID: 2100000, guid: 2cdf90e342359474593ef96462cafc3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Metal
+    second: {fileID: 2100000, guid: b90ede30789062b4d8cd964722515263, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Red
+    second: {fileID: 2100000, guid: 08d684fac544b404a870ec6b7efd13cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Radome White Plastic
+    second: {fileID: 2100000, guid: 4e82b8eb3b5f47847b7e729bbf2dee1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screws Metal
+    second: {fileID: 2100000, guid: 63c6cefaf0b4bbf4eb61374b833d821b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Plastic
+    second: {fileID: 2100000, guid: 3cc5999af8e7dbc4ea4caa8d465b7c83, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

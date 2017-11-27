@@ -415,6 +415,12 @@
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level1">
       <PackagePath>Data\level1</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level2">
+      <PackagePath>Data\level2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level3">
+      <PackagePath>Data\level3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
@@ -433,11 +439,23 @@
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets2.assets">
+      <PackagePath>Data\sharedassets2.assets</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets3.assets">
+      <PackagePath>Data\sharedassets3.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level2.resS">
+      <PackagePath>Data\level2.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level3.resS">
+      <PackagePath>Data\level3.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>

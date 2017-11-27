@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9ff5b2f3-e7df-47ea-9f97-b6287396ddfb}</ProjectGuid>
+    <ProjectGuid>{5a1a372a-91fc-4fa1-ae85-80dbd4f9d152}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -383,6 +383,9 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\FixedAngularSize.cs">
       <Link>Scripts\FixedAngularSize.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\FollowTarget.cs">
+      <Link>Scripts\FollowTarget.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\GestureAction.cs">
       <Link>Scripts\GestureAction.cs</Link>
     </Compile>
@@ -392,20 +395,14 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAction.cs">
       <Link>Scripts\InteractibleAction.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir\Models\InteractibleActionAirModels.cs">
-      <Link>Scripts\InteractibleAir\Models\InteractibleActionAirModels.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleAir\Models\InteractibleAirModels.cs">
-      <Link>Scripts\InteractibleAir\Models\InteractibleAirModels.cs</Link>
-    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleManager.cs">
       <Link>Scripts\InteractibleManager.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleModel.cs">
+      <Link>Scripts\InteractibleModel.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\Interpolator.cs">
       <Link>Scripts\Interpolator.cs</Link>
-    </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\LoadOnStart.cs">
-      <Link>Scripts\LoadOnStart.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\UnloadUnusedAssets.cs">
       <Link>Scripts\UnloadUnusedAssets.cs</Link>

@@ -53,6 +53,11 @@ public class Interactible : MonoBehaviour
             gameObject.AddComponent<BoxCollider>();
         }
 
+        InitBtns();
+    }
+
+    void InitBtns()
+    {
         BtnAir = GameObject.Find("BtnAir").GetComponent<Button>();
         BtnSea = GameObject.Find("BtnSea").GetComponent<Button>();
         BtnLand = GameObject.Find("BtnLand").GetComponent<Button>();
@@ -78,7 +83,7 @@ public class Interactible : MonoBehaviour
                         this.SendMessageUpwards("OnAirButton");
                         time = 0;
                         onAirBtnTimer = false;
-                         
+
                     }
                 }
                 break;
@@ -92,13 +97,13 @@ public class Interactible : MonoBehaviour
                     if (time >= 3f)
                     {
                         time = 0;
-                        Debug.Log("Sea Done");
-                        
+                        this.SendMessageUpwards("OnSeaButton");
                         onSeaBtnTimer = false;
                     }
                 }
 
                 break;
+
             case MENU_BUTTON.ON_LAND:
                 if (onLandBtnTimer == true)
                 {
@@ -108,8 +113,7 @@ public class Interactible : MonoBehaviour
                     if (time >= 3f)
                     {
                         time = 0;
-                        Debug.Log("Land Done");
-                    
+                        this.SendMessageUpwards("OnLandButton");
                         onLandBtnTimer = false;
                     }
                 }
@@ -129,13 +133,13 @@ public class Interactible : MonoBehaviour
         {
             defaultMaterials[i].SetFloat("_Highlight", .25f);
         }*/
-
         OnGazeEntered(this.gameObject.name);
 
     }
 
     void GazeExited()
     {
+        InitBtns();
         /*for (int i = 0; i < defaultMaterials.Length; i++)
         {
             defaultMaterials[i].SetFloat("_Highlight", 0f);
