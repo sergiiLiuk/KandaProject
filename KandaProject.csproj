@@ -257,6 +257,9 @@
     <Compile Include="Assets\Scripts\InteractibleModel.cs" />
     <Compile Include="Assets\Scripts\Interpolator.cs" />
     <Compile Include="Assets\Scripts\PlaceTarget.cs" />
+    <Compile Include="Assets\Scripts\SharedVariables.cs" />
+    <Compile Include="Assets\Scripts\SpatialMapping\SpatialMapping.cs" />
+    <Compile Include="Assets\Scripts\TapToPlace.cs" />
     <Compile Include="Assets\Scripts\UnloadUnusedAssets.cs" />
     <Compile Include="Assets\Scripts\Utilities\Tagalong.cs" />
   </ItemGroup>
@@ -271,6 +274,7 @@
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.cginc" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.shader" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
+    <None Include="Assets\Resources\Materials\Wireframe.shader" />
     <None Include="Assets\Resources\Shaders\SpecularHighlight.shader" />
     <None Include="Assets\Resources\Shaders\StandardFastBackFaceCulling.shader" />
     <None Include="Assets\Resources\Shaders\UITransparent.shader" />

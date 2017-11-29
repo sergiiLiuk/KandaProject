@@ -1,4 +1,5 @@
 Metro
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SharedVariables
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -92,7 +93,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 af723155c251fcfa0e66530a75f3ea4c UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-44dbd481a9a952da8a10bc0e46621a1a Assembly-CSharp.dll:.InteractibleModel
+c3d6ffee6d3c325c3fb83488b4c5e36d Assembly-CSharp.dll:.InteractibleModel
 a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.DismissOnSelect
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -109,6 +110,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+f3c035927d365f6d87cbfbe24b3b328b Assembly-CSharp.dll:.PlaceTarget
 b2a315accced7cc5d47d31b967e2abbe Assembly-CSharp.dll:Academy.HoloToolkit.Unity.HandGuidance
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
@@ -116,6 +118,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TapToPlace
 94267287058087390e20a30b748176fa Assembly-CSharp.dll:Academy.Toolkit.Unity.DirectionIndicator
 1c8cafcfe2ee45404a67f90e9183e56c Assembly-CSharp.dll:Academy.HoloToolkit.Unity.CursorFeedback
 e611f0bfab75b2af0aa9edf1eeb6314c Assembly-CSharp.dll:Academy.HoloToolkit.Unity.Interpolator
@@ -142,6 +145,7 @@ ecd2c13a8828eba4a5b6eaaaeee884fa Assembly-CSharp.dll:.GestureAction
 2a56361227def9f56c2cf57a88b32f4d UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
+257b0cd9042cc9102c864f96c614443c Assembly-CSharp.dll:.FollowTarget
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.InteractibleManager
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 186cc323f9f1e9ce3dbc3cb69a7ece5f Assembly-CSharp.dll:Academy.Toolkit.Unity.FixedAngularSize
@@ -153,9 +157,9 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 a0c721105be7b25bd91dbfa3278c61d2 Assembly-CSharp.dll:.Interactible
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 5bfd4e15a7c3ffd1cb09d9f51970bc66 Assembly-CSharp.dll:Academy.HoloToolkit.Unity.HandsManager
+1802df0c587099fd3895470c625ed810 Assembly-CSharp.dll:.SpatialMapping
 7f51c3ae6d2a735d8137d211eefae86d Assembly-CSharp.dll:Academy.Toolkit.Unity.Tagalong
 50f33d1995558dcbf60efcbc163651a7 Assembly-CSharp.dll:Academy.HoloToolkit.Unity.GestureManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnloadUnusedAssets
 421330f471815daad023b720c93a04fb Assembly-CSharp.dll:.AppManager
 8341b3cb2ade13f5c82c8071edc414fb Assembly-CSharp.dll:Academy.HoloToolkit.Unity.CursorManager
-257b0cd9042cc9102c864f96c614443c Assembly-CSharp.dll:.FollowTarget

@@ -80,7 +80,7 @@ public class InteractibleAction : MonoBehaviour
             LoadScenePrgressBarImg = GameObject.Find("LoadBarFillImg").GetComponent<Image>();
             LoadScenePrgressBarText = GameObject.Find("LoadBarFillTxt").GetComponent<Text>();
             LoadScenePrgressBarImg.fillAmount = progress;
-            LoadScenePrgressBarText.text = (progress * 100) + "%";
+            LoadScenePrgressBarText.text = (int)(progress * 100) + "%";
         }
         if (progress > 0.9f)
         {

@@ -14,14 +14,19 @@ public class GestureAction : MonoBehaviour
 
     private float rotationFactor;
 
+    private float ManipulationSensitivityX = 0.1f;
+    private float ManipulationSensitivityY = 0.4f;
+    private float ManipulationSensitivityZ = 0.4f;
+
     void Update()
     {
         PerformRotation();
+        PerformManipulation();
     }
 
     private void PerformRotation()
     {
-        if (GestureManager.Instance.IsNavigating /*&& HandsManager.Instance.FocusedGameObject == gameObject*/)
+        if (GestureManager.Instance.IsNavigating && HandsManager.Instance.FocusedGameObject == gameObject)
         {
             /* TODO: DEVELOPER CODING EXERCISE 2.c */
 
@@ -30,7 +35,7 @@ public class GestureAction : MonoBehaviour
             rotationFactor = GestureManager.Instance.NavigationPosition.x * RotationSensitivity;
 
             // 2.c: transform.Rotate along the Y axis using rotationFactor.
-            transform.Rotate(new Vector3(0, -1 * rotationFactor, 0));
+            transform.Rotate(new Vector3(0, 0, -1 * rotationFactor));
         }
     }
 
@@ -39,25 +44,43 @@ public class GestureAction : MonoBehaviour
         manipulationPreviousPosition = position;
     }
 
-    void PerformManipulationUpdate(Vector3 position)
+    void PerformManipulation()
     {
-        //Debug.Log("Focused Obj: " + HandsManager.Instance.FocusedGameObject);
-        //Debug.Log("Curr Obj:" + gameObject);
+        if (GestureManager.Instance.IsManipulating && HandsManager.Instance.FocusedGameObject == gameObject)
+        {
+            // Activate Spatial Mapping
+            Debug.Log("here");
+            SpatialMapping.Instance.DrawVisualMeshes = true;
 
+            // Activate surface validation                      
+            // TargetToPlace = true;
+
+            float manipulationFactorX = GestureManager.Instance.ManipulationPosition.x * ManipulationSensitivityX;
+            float manipulationFactorY = GestureManager.Instance.ManipulationPosition.y * ManipulationSensitivityY;
+            float manipulationFactorZ = GestureManager.Instance.ManipulationPosition.z * ManipulationSensitivityZ;
+
+            transform.localPosition += new Vector3(manipulationFactorX, manipulationFactorY, manipulationFactorZ);
+        }
+    }
+    /*void PerformManipulationUpdate(Vector3 position)
+    {
         if (GestureManager.Instance.IsManipulating && HandsManager.Instance.FocusedGameObject == gameObject)
         {
             /* TODO: DEVELOPER CODING EXERCISE 4.a */
 
-            Vector3 moveVector = Vector3.zero;
+    // Activate surface validation                      
+    // TargetToPlace = true;
 
-            // 4.a: Calculate the moveVector as position - manipulationPreviousPosition.
-            moveVector = position - manipulationPreviousPosition;
+    /*    Vector3 moveVector = Vector3.zero;
 
-            // 4.a: Update the manipulationPreviousPosition with the current position.
-            manipulationPreviousPosition = position;
+        // 4.a: Calculate the moveVector as position - manipulationPreviousPosition.
+        moveVector = position - manipulationPreviousPosition;
 
-            // 4.a: Increment this transform's position by the moveVector.
-            transform.position += moveVector;
-        }
+        // 4.a: Update the manipulationPreviousPosition with the current position.
+        manipulationPreviousPosition = position;
+
+        // 4.a: Increment this transform's position by the moveVector.
+        transform.position += moveVector;
     }
+}*/
 }

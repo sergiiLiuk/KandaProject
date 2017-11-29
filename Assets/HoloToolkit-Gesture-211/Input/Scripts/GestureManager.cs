@@ -94,7 +94,7 @@ namespace Academy.HoloToolkit.Unity
         public void ResetGestureRecognizers()
         {
             // Default to the navigation gestures.
-            if (currentGestureState == 0)
+            /*if (currentGestureState == 0)
             {
                 CurrentRecognizer = DefaultRecognizer;
             }
@@ -112,7 +112,7 @@ namespace Academy.HoloToolkit.Unity
             else if (currentGestureState == 3)
             {
                 //CurrentRecognizer = ScalingRecognizer;
-            }
+            }*/
 
             Transition(CurrentRecognizer);
         }

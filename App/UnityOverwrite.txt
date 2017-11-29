@@ -8,9 +8,9 @@
 Kanda Project.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 Kanda Project\App.cs: 05ED3FDDC42B747079A20582A096C491
-Kanda Project\Kanda Project.csproj: 4838D2002DEEB72F308962ADD0B1EAC2
+Kanda Project\Kanda Project.csproj: modified
 Kanda Project\Kanda Project.csproj.user: modified
-Kanda Project\Package.appxmanifest: E71CD2B3079671DF5D62F628F4734F70
+Kanda Project\Package.appxmanifest: 1853A033EBF109B2845DAE09E792E1E5
 Kanda Project\project.json: 1D02BC64BAC0D041019673A1C4C51737
 Kanda Project\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 Kanda Project\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

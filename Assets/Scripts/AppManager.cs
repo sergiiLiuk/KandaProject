@@ -62,32 +62,6 @@ public class AppManager : Singleton<AppManager>
         GestureManager.Instance.Transition(GestureManager.Instance.ManipulationRecognizer);
     }
 
-    //------------Initiate Recognizers---------------
-    public void InitiateDefaultRecognizer()
-    {
-        GestureManager.Instance.Transition(GestureManager.Instance.DefaultRecognizer);
-        //GestureManager.Instance.currentGestureState = 0;
-    }
-
-    public void InitiateManipulationRecognizer()
-    {
-        GestureManager.Instance.Transition(GestureManager.Instance.ManipulationRecognizer);
-        //GestureManager.Instance.currentGestureState = 1;
-
-        // Refresh default Gesture timer
-        //timerDone = false;
-        //DefaultRecognizerTimer = 6.0f;
-    }
-
-    public void InitiateNavigationRecognizer()
-    {
-        GestureManager.Instance.Transition(GestureManager.Instance.NavigationRecognizer);
-        //GestureManager.Instance.currentGestureState = 2;
-        // Refresh default Gesture timer
-        //timerDone = false;
-        //Instance.DefaultRecognizerTimer = 6.0f;
-    }
-
 
     public void Update()
     {

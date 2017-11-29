@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5a1a372a-91fc-4fa1-ae85-80dbd4f9d152}</ProjectGuid>
+    <ProjectGuid>{a54f4005-bef5-449a-9b11-a4a7d1d2c264}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -403,6 +403,18 @@
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\Interpolator.cs">
       <Link>Scripts\Interpolator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\PlaceTarget.cs">
+      <Link>Scripts\PlaceTarget.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\SharedVariables.cs">
+      <Link>Scripts\SharedVariables.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\SpatialMapping\SpatialMapping.cs">
+      <Link>Scripts\SpatialMapping\SpatialMapping.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\TapToPlace.cs">
+      <Link>Scripts\TapToPlace.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\UnloadUnusedAssets.cs">
       <Link>Scripts\UnloadUnusedAssets.cs</Link>
