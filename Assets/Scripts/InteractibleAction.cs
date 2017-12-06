@@ -8,7 +8,7 @@ using UnityEngine.UI;
 /// </summary>
 public class InteractibleAction : MonoBehaviour
 {
-    GameObject LoadSceneProgressBar;
+    public GameObject LoadSceneProgressBar;
     float progress;
     bool sceneBar = false;
 
@@ -17,7 +17,7 @@ public class InteractibleAction : MonoBehaviour
 
     void Start()
     {
-        LoadSceneProgressBar = GameObject.Find("CanvasSceneLoadBar");
+        //LoadSceneProgressBar = GameObject.Find("CanvasSceneLoadBar");
         LoadSceneProgressBar.SetActive(false);
     }
 
@@ -86,6 +86,7 @@ public class InteractibleAction : MonoBehaviour
         {
             LoadSceneProgressBar.SetActive(false);
             sceneBar = false;
+            SharedVariables.seaScene = true;
         }
     }
 

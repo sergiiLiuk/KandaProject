@@ -64,6 +64,9 @@ namespace Academy.HoloToolkit.Unity
         private void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs obj)
         {
             HandDetected = true;
+            /* SharedVariables.currentGestureState = SharedVariables.previousGestureState;
+             Debug.Log("trwwe: " + SharedVariables.currentGestureState);
+             GestureManager.Instance.ResetGestureRecognizers();*/
         }
 
         private void InteractionManager_InteractionSourceLost(InteractionSourceLostEventArgs obj)
@@ -72,6 +75,7 @@ namespace Academy.HoloToolkit.Unity
 
             // 2.a: Reset FocusedGameObject.
             ResetFocusedGameObject();
+
         }
 
         private void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs hand)
@@ -95,6 +99,7 @@ namespace Academy.HoloToolkit.Unity
         {
             // 2.a: Reset FocusedGameObject.
             ResetFocusedGameObject();
+
         }
 
         private void ResetFocusedGameObject()
@@ -104,6 +109,9 @@ namespace Academy.HoloToolkit.Unity
 
             // 2.a: On GestureManager call ResetGestureRecognizers
             // to complete any currently active gestures.
+
+            //My code           
+
             GestureManager.Instance.ResetGestureRecognizers();
         }
 

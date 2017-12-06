@@ -1,0 +1,2 @@
+C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Kanda Project.csproj;x86

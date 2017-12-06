@@ -1,0 +1,2 @@
+C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\obj\ARM\Debug\Kanda Project.csprojResolveAssemblyReference.cache
+C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\obj\ARM\Debug\Kanda Project.csproj.CoreCompileInputs.cache

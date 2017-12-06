@@ -49,6 +49,14 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 {
                     FocusedGameObject.SendMessage("GazeEntered");
                 }
+
+                if (SharedVariables.seaScene)
+                {
+                    if (FocusedGameObject.GetComponent<InteractibleModelMenu>() != null)
+                    {
+                        FocusedGameObject.SendMessage("GazeEntered");
+                    }
+                }
             }
         }
     }
@@ -62,11 +70,13 @@ public class InteractibleManager : Singleton<InteractibleManager>
                 oldFocusedGameObject.SendMessage("GazeExited");
             }
 
-            /*if (oldFocusedGameObject.GetComponent<InteractibleModel>() != null)
+            if (SharedVariables.seaScene)
             {
-                oldFocusedGameObject.SendMessage("GazeExited");
-            }*/
-
+                if (oldFocusedGameObject.GetComponent<InteractibleModelMenu>() != null)
+                {
+                    oldFocusedGameObject.SendMessage("GazeExited");
+                }
+            }
         }
     }
 }

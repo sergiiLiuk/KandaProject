@@ -26,8 +26,6 @@ namespace Academy.HoloToolkit.Unity
 
         private GestureRecognizer CurrentRecognizer;
 
-        public int currentGestureState = 0;
-
         void Awake()
         {
             /* TODO: DEVELOPER CODING EXERCISE 2.b */
@@ -64,6 +62,7 @@ namespace Academy.HoloToolkit.Unity
 
             DefaultRecognizer.TappedEvent += DoubleTapRecognizer_TappedEvent;
 
+            CurrentRecognizer = Instance.DefaultRecognizer;
             ResetGestureRecognizers();
         }
 
@@ -94,26 +93,22 @@ namespace Academy.HoloToolkit.Unity
         public void ResetGestureRecognizers()
         {
             // Default to the navigation gestures.
-            /*if (currentGestureState == 0)
+            if (SharedVariables.currentGestureState == 0)
             {
                 CurrentRecognizer = DefaultRecognizer;
             }
 
-            else if (currentGestureState == 1)
+            else if (SharedVariables.currentGestureState == 1)
             {
                 CurrentRecognizer = ManipulationRecognizer;
             }
 
-            else if (currentGestureState == 2)
+            else if (SharedVariables.currentGestureState == 2)
             {
-                // CurrentRecognizer = RotationRecognizer;
+                CurrentRecognizer = NavigationRecognizer;
             }
 
-            else if (currentGestureState == 3)
-            {
-                //CurrentRecognizer = ScalingRecognizer;
-            }*/
-
+            //Debug.Log("cur: " + SharedVariables.currentGestureState);
             Transition(CurrentRecognizer);
         }
 
@@ -129,7 +124,11 @@ namespace Academy.HoloToolkit.Unity
             if (focusedObject != null)
             {
                 focusedObject.SendMessageUpwards("OnSelect");
+            }
 
+            if (tapCount == 2)
+            {
+                //SharedVariables.showModelMenu = !SharedVariables.showModelMenu;
             }
         }
 

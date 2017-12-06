@@ -15,6 +15,6 @@ public class FollowTarget : MonoBehaviour
 
     void Update()
     {
-        target.transform.position = transform.TransformPoint(pos);
+        //target.transform.position = transform.TransformPoint(pos);
     }
 }

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T14:12:43.715</Modified>
+      <Modified>2017-12-01T13:17:01.605</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\bin\x86\Release\Kanda Project.exe">
       <PackagePath>entrypoint\Kanda Project.exe</PackagePath>
-      <Modified>2017-11-29T14:12:35.266</Modified>
+      <Modified>2017-12-01T13:16:52.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-11-29T13:50:36.507</Modified>
+      <Modified>2017-12-01T13:16:41.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -539,27 +539,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2017-11-29T13:50:01.435</Modified>
+      <Modified>2017-12-01T13:16:07.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-11-29T13:50:00.070</Modified>
+      <Modified>2017-12-01T13:16:05.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-11-29T13:49:57.774</Modified>
+      <Modified>2017-12-01T13:16:04.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2017-11-29T13:49:58.416</Modified>
+      <Modified>2017-12-01T13:16:04.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level2">
       <PackagePath>Data\level2</PackagePath>
-      <Modified>2017-11-29T13:49:58.887</Modified>
+      <Modified>2017-12-01T13:16:04.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level3">
       <PackagePath>Data\level3</PackagePath>
-      <Modified>2017-11-29T13:49:59.237</Modified>
+      <Modified>2017-12-01T13:16:05.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -567,67 +567,67 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-11-29T13:50:01.433</Modified>
+      <Modified>2017-12-01T13:16:07.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-11-29T13:50:00.241</Modified>
+      <Modified>2017-12-01T13:16:05.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2017-11-29T13:50:00.639</Modified>
+      <Modified>2017-12-01T13:16:06.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-11-29T13:50:01.087</Modified>
+      <Modified>2017-12-01T13:16:06.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2017-11-29T13:50:01.122</Modified>
+      <Modified>2017-12-01T13:16:06.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
-      <Modified>2017-11-29T13:50:01.130</Modified>
+      <Modified>2017-12-01T13:16:06.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets3.assets">
       <PackagePath>Data\sharedassets3.assets</PackagePath>
-      <Modified>2017-11-29T13:50:01.136</Modified>
+      <Modified>2017-12-01T13:16:06.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2017-11-29T13:49:57.762</Modified>
+      <Modified>2017-12-01T13:16:04.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2017-11-29T13:49:58.413</Modified>
+      <Modified>2017-12-01T13:16:04.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
-      <Modified>2017-11-29T13:49:58.879</Modified>
+      <Modified>2017-12-01T13:16:04.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\level3.resS">
       <PackagePath>Data\level3.resS</PackagePath>
-      <Modified>2017-11-29T13:49:59.233</Modified>
+      <Modified>2017-12-01T13:16:05.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2017-11-29T13:50:00.597</Modified>
+      <Modified>2017-12-01T13:16:06.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-11-29T13:50:01.084</Modified>
+      <Modified>2017-12-01T13:16:06.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-11-29T13:50:36.461</Modified>
+      <Modified>2017-12-01T13:16:40.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\resources.resource">
       <PackagePath>Data\resources.resource</PackagePath>
-      <Modified>2017-11-29T13:50:00.653</Modified>
+      <Modified>2017-12-01T13:16:06.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2017-11-29T13:50:01.094</Modified>
+      <Modified>2017-12-01T13:16:06.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -636,203 +636,203 @@
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-29T13:51:03.379</Modified>
+      <Modified>2017-12-01T13:16:53.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.009</Modified>
+      <Modified>2017-12-01T13:17:00.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.051</Modified>
+      <Modified>2017-12-01T13:17:00.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.071</Modified>
+      <Modified>2017-12-01T13:17:00.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.118</Modified>
+      <Modified>2017-12-01T13:17:00.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.137</Modified>
+      <Modified>2017-12-01T13:17:00.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.156</Modified>
+      <Modified>2017-12-01T13:17:00.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.174</Modified>
+      <Modified>2017-12-01T13:17:00.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.195</Modified>
+      <Modified>2017-12-01T13:17:00.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.217</Modified>
+      <Modified>2017-12-01T13:17:00.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.245</Modified>
+      <Modified>2017-12-01T13:17:00.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.284</Modified>
+      <Modified>2017-12-01T13:17:00.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.304</Modified>
+      <Modified>2017-12-01T13:17:00.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.324</Modified>
+      <Modified>2017-12-01T13:17:00.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.340</Modified>
+      <Modified>2017-12-01T13:17:00.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.360</Modified>
+      <Modified>2017-12-01T13:17:00.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.378</Modified>
+      <Modified>2017-12-01T13:17:00.330</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.395</Modified>
+      <Modified>2017-12-01T13:17:00.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.432</Modified>
+      <Modified>2017-12-01T13:17:00.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.449</Modified>
+      <Modified>2017-12-01T13:17:00.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.464</Modified>
+      <Modified>2017-12-01T13:17:00.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.487</Modified>
+      <Modified>2017-12-01T13:17:00.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.512</Modified>
+      <Modified>2017-12-01T13:17:00.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.704</Modified>
+      <Modified>2017-12-01T13:17:00.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.720</Modified>
+      <Modified>2017-12-01T13:17:00.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.743</Modified>
+      <Modified>2017-12-01T13:17:00.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-11-29T13:50:15.667</Modified>
+      <Modified>2017-12-01T13:16:21.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.758</Modified>
+      <Modified>2017-12-01T13:17:00.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.774</Modified>
+      <Modified>2017-12-01T13:17:00.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.793</Modified>
+      <Modified>2017-12-01T13:17:00.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.810</Modified>
+      <Modified>2017-12-01T13:17:00.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.834</Modified>
+      <Modified>2017-12-01T13:17:00.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.853</Modified>
+      <Modified>2017-12-01T13:17:00.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.870</Modified>
+      <Modified>2017-12-01T13:17:00.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.890</Modified>
+      <Modified>2017-12-01T13:17:00.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.918</Modified>
+      <Modified>2017-12-01T13:17:00.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.935</Modified>
+      <Modified>2017-12-01T13:17:00.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.969</Modified>
+      <Modified>2017-12-01T13:17:00.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:42.992</Modified>
+      <Modified>2017-12-01T13:17:00.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.024</Modified>
+      <Modified>2017-12-01T13:17:00.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.040</Modified>
+      <Modified>2017-12-01T13:17:00.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.069</Modified>
+      <Modified>2017-12-01T13:17:01.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.084</Modified>
+      <Modified>2017-12-01T13:17:01.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.122</Modified>
+      <Modified>2017-12-01T13:17:01.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.172</Modified>
+      <Modified>2017-12-01T13:17:01.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.252</Modified>
+      <Modified>2017-12-01T13:17:01.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.277</Modified>
+      <Modified>2017-12-01T13:17:01.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-11-29T14:12:43.345</Modified>
+      <Modified>2017-12-01T13:17:01.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-11-29T14:12:41.990</Modified>
+      <Modified>2017-12-01T13:16:59.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kandadeveloper\Desktop\SergiiProject\KandaProject\App\Kanda Project\bin\x86\Release\Core\Kanda Project.exe">
       <PackagePath>Kanda Project.exe</PackagePath>
-      <Modified>2017-11-29T14:12:43.713</Modified>
+      <Modified>2017-12-01T13:17:01.603</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

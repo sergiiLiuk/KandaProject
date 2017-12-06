@@ -1,4 +1,7 @@
 sceneSetups:
-- path: C:/Users/kandadeveloper/Desktop/SergiiFiles/HolographicAcademy-Holograms-101/HolographicAcademy-Holograms-101/CatchUpChapters/7-SpatialMapping-Completed/Assets/Origami.unity
+- path: Assets/Scenes/OnStartScene.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/SeaScene.unity
+  isLoaded: 1
+  isActive: 0

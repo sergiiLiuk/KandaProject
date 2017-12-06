@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{a54f4005-bef5-449a-9b11-a4a7d1d2c264}</ProjectGuid>
+    <ProjectGuid>{3c1bb472-b414-4ca6-a70e-07affc1ffaa1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -398,11 +398,20 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleManager.cs">
       <Link>Scripts\InteractibleManager.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\InteractibleModel.cs">
-      <Link>Scripts\InteractibleModel.cs</Link>
-    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\Interpolator.cs">
       <Link>Scripts\Interpolator.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Model\InteractibleModel.cs">
+      <Link>Scripts\Model\InteractibleModel.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Model\InteractibleModelAction.cs">
+      <Link>Scripts\Model\InteractibleModelAction.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Model\ModelController.cs">
+      <Link>Scripts\Model\ModelController.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\ModelMenu\InteractibleModelMenu.cs">
+      <Link>Scripts\ModelMenu\InteractibleModelMenu.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\PlaceTarget.cs">
       <Link>Scripts\PlaceTarget.cs</Link>
@@ -413,8 +422,11 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\SpatialMapping\SpatialMapping.cs">
       <Link>Scripts\SpatialMapping\SpatialMapping.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Scripts\TapToPlace.cs">
-      <Link>Scripts\TapToPlace.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\testAction.cs">
+      <Link>Scripts\testAction.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\UIController.cs">
+      <Link>Scripts\UIController.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\UnloadUnusedAssets.cs">
       <Link>Scripts\UnloadUnusedAssets.cs</Link>
